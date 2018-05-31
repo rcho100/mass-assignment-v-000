@@ -5,6 +5,6 @@ class Person
 
   def initialize(attributes_hash)
     # binding.pry
-    attributes_hash.each {|key, value| self.send("#{key}=", value)}
+    attributes_hash.each {|key, value| self.send(("#{key}="), value)}
   end
 end
